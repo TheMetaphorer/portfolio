@@ -1,0 +1,11 @@
+
+2017.0.1
+
+    - Initial release
+    - Member models and bios viewable from /h page
+
+2017.1.0
+    - Second release
+    - News app fully functional.
+    - Added field img_url for members, so
+    they can display their picture.

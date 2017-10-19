@@ -12,3 +12,7 @@ from home.models import Member
 def member_view(request, **kwargs):
     request_member = Member.objects.get(name=kwargs['name'])
     return render(request, "member.html", {"member": request_member})
+
+
+def contact_us_view(request):
+    pass

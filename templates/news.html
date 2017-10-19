@@ -1,0 +1,10 @@
+{% extends 'skeleton.html' %}
+
+{% block content %}
+{% for update in news %}
+<h1>{{ update.title }}</h1>
+<h2>{{ update.by }}</h2>
+<h3>{{ update.created }}</h3>
+<p>{{update.content}}</p>
+{% endfor %}
+{% endblock %}
