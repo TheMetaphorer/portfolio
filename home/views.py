@@ -15,4 +15,4 @@ def member_view(request, **kwargs):
 
 
 def contact_us_view(request):
-    pass
+    return render(request, 'contact_us.html')
