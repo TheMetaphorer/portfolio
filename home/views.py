@@ -8,6 +8,9 @@ from home.models import Member
 
 # Create your views here.
 
+def home_view(request):
+    members = Member.objects.all()
+    return render(request, 'homepage.html', {"members": members})
 
 def member_view(request, **kwargs):
     request_member = Member.objects.get(name=kwargs['name'])

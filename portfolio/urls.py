@@ -15,9 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.shortcuts import HttpResponseRedirect
 
+### view to redirect user from / to /h/ ###
+
+def redirect_view(request):
+    return HttpResponseRedirect('/h/')
+    
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^h/', include('home.urls', namespace='home')),
-    url(r'^news$', include('news.urls', namespace='news'))
+    url(r'^news$', include('news.urls', namespace='news')),
+    url(r'^$', redirect_view)
 ]

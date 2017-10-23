@@ -25,7 +25,10 @@ SECRET_KEY = 'o2p)hf_075^=^$hp(7w-$j2e=owvi2sa0e)#p(d=ua5ab=)fyz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'portfolio',
+    '104.196.39.247'
+    ]
 
 
 # Application definition
@@ -121,4 +124,6 @@ VERSION = "2017.0.1"
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+ 
